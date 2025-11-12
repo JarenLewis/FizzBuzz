@@ -1,11 +1,9 @@
 package org.example;
 
-public class fizzBuzz {
-    public static int fizzBuzzSolution() {
+public class FizzBuzz {
+    public static void fizzBuzzSolution() {
 
-        int i = 0;
-
-        for (i = 0; i < 100; i++) {
+        for (int i = 1; i <= 100; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
                 System.out.println("fizzbuzz");
             } else if (i % 3 == 0) {
@@ -13,7 +11,9 @@ public class fizzBuzz {
             } else if (i % 5 == 0) {
                 System.out.println("buzz");
             }
+            else {
+                System.out.println(i);
+            }
         }
-        return i;
     }
 }
